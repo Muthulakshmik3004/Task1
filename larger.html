@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Art Gallery</title>
+    <link rel="stylesheet" href="larger.css">
+</head>
+<body>
+    <!-- Digital Art Viewer -->
+    <div class="gallery-container">
+        <!-- Main Image -->
+        <div class="image-viewer">
+            <img id="currentImage" src="digital-art/12.jpg" alt="Art" />
+            <button class="nav-btn left-btn" onclick="prevImage()">&#8249;</button>
+            <button class="nav-btn right-btn" onclick="nextImage()">&#8250;</button>
+            <button class="zoom-btn" onclick="toggleZoom()">&#128269;</button>
+        </div>
+
+        <!-- Thumbnail Navigation -->
+        <div class="thumbnails">
+            <img class="thumb" src="digital-art/12.jpg"800x500 onclick="changeImage(0)" />
+            <img class="thumb" src="digital-art/2.jpg" onclick="changeImage(1)" />
+            <img class="thumb" src="digital-art/3.jpg" onclick="changeImage(2)" />
+            <img class="thumb" src="digital-art/13.jpg" onclick="changeImage(3)" />
+            <img class="thumb" src="digital-art/8.jpg"800x500 onclick="changeImage(4)" />
+            <img class="thumb" src="digital-art/6.jpg" onclick="changeImage(5)" />
+            <img class="thumb" src="digital-art/19.jpg" onclick="changeImage(6)" />
+            <img class="thumb" src="digital-art/9.jpg" onclick="changeImage(7)" />
+            <img class="thumb" src="digital-art/15.jpg" onclick="changeImage(8)" />
+            <img class="thumb" src="digital-art/11.jpg" onclick="changeImage(9)" />
+        </div>
+    </div>
+
+    <script src="larger.js"></script>
+</body>
+</html>
